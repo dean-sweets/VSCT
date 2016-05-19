@@ -1,0 +1,33 @@
+// ==============================================
+//				Alerts
+// ==============================================
+
+.warning, .success, .error{
+	padding:@alert-padding;
+	margin:@alert-margin;
+	font-size: @alert-font-size;
+	display: inline-block;
+	width:100%;
+}
+
+i.close{	
+	.close();
+	float: right;
+	opacity: .7;
+	color: inherit;
+}
+
+.warning{
+	background-color: @warning-background-color;
+	color:@warning-font-color;
+}
+
+.success{
+	background-color: @success-background-color;
+	color:@success-font-color;
+}
+
+.error{
+	background-color: @error-background-color;
+	color:@error-font-color;
+}

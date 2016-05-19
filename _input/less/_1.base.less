@@ -1,0 +1,67 @@
+//  ==============================
+//  		
+//  		 1.0 BASE 
+//  
+//  ==============================
+
+//  ## Base Guidelines:
+//  - Global Element Declarations
+//  - CSS Resets
+
+//  ## Try to avoid using:
+//  - classes
+//  - ID Selectors
+
+//  ## Base Examples: 
+//  - heading sizes
+//  - default link styles
+//  - default font styles
+//  - body styles
+//  - CSS Resets
+
+//  #Table of Contents
+
+//  1.1 Normalize Reset
+//  1.2 Typography
+
+
+
+// this is the reset. Shouldn't need to emove or modify this
+@import "components/b-normalize.less"; 
+@import "components/b-typography.less"; 
+@import "components/b-visibility.less";
+@import "components/b-mixins.less";
+
+
+
+body {
+	background: @body-bg;
+	color: @global-font-color;
+	font-size: @base-font-size;
+	line-height:@global-line-height;
+	font-family: @global-font-family;
+	font-weight: 100;
+} 
+
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	}
+
+
+

@@ -1,0 +1,36 @@
+.switch, .switch-circle {
+  touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 50px;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
+  transition: transform 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
+}
+
+.switch {
+  width: 100px;
+  border:1px solid #dddddd;
+  border-radius: 27px;
+  background: @switch-off-color;
+  position: relative;
+}
+
+.switch-circle {
+  width: 50%;
+  border-radius: 25px;
+  border:1px solid #dddddd;
+  background: @white;
+}
+
+/*------------Effect-------------*/
+.switch.active {
+  background: @success-color;
+  border-color: @switch-on-border-color;
+}
+.switch.active .switch-circle {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}

@@ -1,0 +1,220 @@
+// ==============================================
+//              Footer
+// ==============================================
+footer {
+    li {
+        list-style: none;
+    }
+    ul {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        color: #888;
+    }
+}
+
+footer.one {
+    background: #2f2c2e;
+    padding-top: 50px;
+    margin-top: 1em;
+    .info {
+        .info-links {
+            ul {
+                li {
+                    float: left;
+                    padding: 1em;
+                }
+                li:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .pages {
+        h5 {
+            text-transform: uppercase;
+            color: @white;
+        }
+        ul {
+            li {
+                a {
+                    display: block;
+                    padding: .3em;
+                    color: @primary-color;
+                    &:hover {
+                        color: lighten(@primary-color, 10%);
+                        .transition();
+                    }
+                }
+            }
+        }
+    }
+    .linkedinPosts {
+        margin-top: 20px;
+    }
+    @media only screen and (min-width: @medium-up) {
+        .linkedinPosts {
+            margin-top: 0;
+        }
+    }
+    .linkedinPosts h4 {
+        color: @white;
+        text-transform: uppercase;
+    }
+    .linkedinPosts h5 {
+        color: @white;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-transform: none;
+    }
+    .linkedinPosts img {
+        width: 40px;
+    }
+    .linkedinPosts a img {
+        width: 20%;
+        margin-right: 20px;
+        margin-top: 10px;
+        float: right;
+    }
+    .linkedinPosts p {
+        color: @white;
+        line-height: 1.25em;
+        margin-top: 15px;
+    }
+    .linkedinPosts a {
+        color: @primary-color;
+    }
+    .linkedinPosts span {
+        color: @white;
+        text-transform: lowercase;
+    }
+    .linkedinPosts .button {
+        float: right;
+        color: @white;
+    }
+
+    
+    
+    @media only screen and (min-width: @medium-up) {
+        .linkedinPosts a img {
+            width: 30%;
+            float: none;
+        }
+        .linkedinButton {
+            float: right;
+            margin-top: 0;
+        }
+    }
+    @media only screen and (min-width: @large-up) {
+        .linkedinPosts a img {
+            width: 20%;
+            margin-right: 0;
+            float: right;
+        }
+    }
+    .subFooter {
+        border-top: 8px solid @primary-color;
+        margin-top: 30px;
+        padding: 20px 0 5px 0;
+    }
+    .subFooter ul {
+        text-align: center;
+        display: inline-block;
+    }
+    .subFooter li {
+        color: @white;
+        display: inline-block;
+        border-right: 1px solid @white;
+        padding: 0 5px;
+        font-size: .875em;
+    }
+    .subFooter ul li:last-child {
+        border-right: none;
+    }
+    .subFooter ul li a {
+        color: @white;
+        &:hover {
+            color: @primary-color;
+            .transition();
+        }
+    }
+    @media only screen and (min-width: @medium-up) {
+        .subFooter ul {
+            text-align: left;
+        }
+    }
+}
+
+footer.two {
+    .pages {
+        margin: 1em 0;
+        ul {
+            li {
+                a {
+                    display: block;
+                    padding: .3em;
+                }
+            }
+        }
+    }
+    .subscribe-input {
+        .btn {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .companyname {
+        text-align: center;
+        padding: 1em 0;
+    }
+}
+
+footer.three {
+    .pages {
+        ul {
+            li {
+                float: left;
+                a {
+                    padding: .5em;
+                }
+            }
+        }
+    }
+    .sociallinks {
+        a {
+            padding: 0 .5em;
+        }
+    }
+}
+
+footer.four {
+    .pages {
+        ul {
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            a {
+                padding: 1em;
+            }
+        }
+    }
+    .privacytext {
+        text-align: center;
+        margin-top: 1em;
+    }
+}
+
+footer.five {
+    h5 {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: @medium-up) {}
+
+@media only screen and (min-width: @large-up) {}

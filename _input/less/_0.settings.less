@@ -1,0 +1,362 @@
+//
+// ==============================================
+//		_0.Settings
+// ==============================================
+// - Grid
+// - Theme colors
+// - Typography
+// - Forms
+// - Buttons
+// - Navigation
+// - Modal
+// - Alerts
+// - Breadcrumbs
+// - Pagination
+// - Content collapse
+// - Slideshow
+// - Switches
+// - Tables
+// - Tabs
+
+
+// ----------------------------------------
+//		Global Settings
+// ----------------------------------------
+
+@body-bg: @white; // you can set this to a variable, color, or image
+
+// fonts
+@global-font-family: 'Source Sans Pro', sans-serif;
+@global-font-color: #525252;
+@global-link-color: @secondary-color;
+
+@global-line-height: 1.4;
+@base-font-size: 1em; // p's, labels,
+@base-pixel-value: @base-font-size * 16;
+
+@global-font-weight: normal;
+@global-font-style: normal;
+
+@global-radius: 3px; // the roundness of all things (buttons, inputs, panels, boxes)
+
+@global-transition: all ease .2s; // for use with the .transition(); mixin
+@global-blur: 5px; // for use with the .blur(); mixin
+
+
+// ----------------------------------------
+//		Colors
+// ----------------------------------------
+
+// Theme Colors
+@primary-color: #3a97d8;
+@primary-dark: darken(@primary-color, 10%);
+@primary-light: lighten(@primary-color, 10%);
+@secondary-color: #003366;
+@tertiary-color: #F44336;
+
+// mono
+@mono-color: #eee; // light gray primarily used for borders
+@white: #FEFEFE;
+@black: #333333;
+@secondary-text: #727272;
+
+// alert colors
+@warning-color: #E97D3D;
+@success-color: #85D93E;
+@error-color: #de2c3b;
+
+//Pro Tip: to use RGBA, use LESS's baked in fade(@color, 10%) mixin
+
+
+// ----------------------------------------
+//		Grid Settings
+// ----------------------------------------
+
+// Columns
+@row-width: 75em;
+@total-columns: 12;
+@column-gutter: 2em;
+
+// Media Queries
+@large-up: 64.025em;
+@medium-up: 48em;
+@small-up: 30em;
+
+// Breakpoints
+@large-row-width: @row-width;
+@medium-row-width: @medium-up;
+@small-row-width: @small-up;
+
+
+// ---------------------------------------------------------
+//		Typography Settings
+// ---------------------------------------------------------
+
+// links
+@link-color: @global-link-color;
+
+// headings
+@heading-font-family: @global-font-family;
+@heading-font-color: @global-font-color;
+@heading-font-weight: @global-font-weight;
+@heading-font-style: @global-font-style;
+@heading-line-height: @global-line-height;
+@heading-margin: 0 0 .5em;
+
+// Paragraph
+@paragraph-font-color: @global-font-color;
+@paragraph-font-size: @base-font-size;
+@paragraph-font-weight: 300;
+@paragraph-line-height: 2em;
+@paragraph-margin:0 0 .5em;
+
+// code
+@code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// ---------------------------------------------------------
+//     Form Settings
+// ---------------------------------------------------------
+
+// Labels
+@label-font-size: @base-font-size;
+@label-font-weight: light;
+@label-font-family: @global-font-family;
+@label-font-color: @global-font-color;
+@form-description-color: @secondary-text;
+
+// Placeholder text
+@placeholder-color:darken(@mono-color, 25%);
+@placeholder-font-size:@base-font-size;
+
+
+// Inputs
+@input-font-family: @global-font-family;
+@input-font-size: @base-font-size;
+@input-font-weight: 100;
+@input-font-color: @global-font-color;
+
+@input-border-color: #ccc;
+@input-border-width: 1px;
+@input-border-radius: @global-radius;
+
+@input-focus-border-color: @secondary-color;
+@input-focus-background: #fbfbfb;
+
+@input-box-shadow: 0 0 3px rgba(70,161,231,0.3);
+
+// Selects
+@select-background-color: #FAFAFA;
+
+// ---------------------------------------------------------
+//      Buttons
+// ---------------------------------------------------------
+
+// color
+@button-background: @secondary-color;
+@button-color:@white;
+@button-hover-background:lighten(@button-background, 20%);
+
+// font
+@button-font-family:@global-font-family;
+@button-font-size:@base-font-size;
+@button-font-weight:300;
+
+// button shape
+@button-radius:@global-radius;
+@button-padding:0.625em 1em;
+
+
+// ---------------------------------------------------------
+//      Navigations Settings
+// ---------------------------------------------------------
+
+// color
+@nav-link-color:@global-font-color;
+@nav-background-color:@primary-color;
+@nav-background-hover:darken(@primary-color, 10%);
+
+// font
+@nav-font-family:@global-font-family;
+@nav-font-size:@base-font-size;
+@nav-font-weight:normal;
+
+// border
+@nav-border-radius:@global-radius;
+
+// space
+@nav-padding: 1em .65em;
+
+
+// ---------------------------------------------------------
+//     Active Dialogue (modal) Settings
+// ---------------------------------------------------------
+
+// color
+@modal-background-color: @white;
+@modal-next-prev-color: @primary-color;
+@modal-body-background: fade(@secondary-color, 80%);
+
+// border
+@modal-radius: @global-radius;
+
+// space
+@modal-padding: 1.5em;
+
+// sizes
+@modal-width-small: 90%;
+@modal-width-medium: 75%;
+@modal-width-large: 50%;
+
+
+// ---------------------------------------------------------
+//      Alert Settings
+// ---------------------------------------------------------
+
+// color
+@warning-background-color:lighten(@warning-color, 30%);;
+@warning-font-color:darken(@warning-color, 25%);
+
+@success-background-color:lighten(@success-color, 30%);
+@success-font-color:darken(@success-color, 25%);
+
+@error-background-color:lighten(@error-color, 30%);
+@error-font-color:darken(@error-color, 25%);
+
+// font
+@alert-font-size:@base-font-size;
+
+// space
+@alert-padding:1em;
+@alert-margin:1em 0;
+
+
+// ---------------------------------------------------------
+//      Breadcrumb Settings
+// ---------------------------------------------------------
+
+// color
+@breadcrumb-background-color:lighten(#ccc, 17%);
+@breadcrumb-link-color:@secondary-color;
+@breadcrumb-link-hover-color:@primary-light;
+@breadcrumb-span-color:@global-font-color;
+
+// font
+@breadcrumb-font-size:@base-font-size;
+@breadcrumb-font-weight:300;
+
+// border
+@breadcrumb-border-radius:@global-radius;
+@breadcrumb-border-color:darken(@mono-color, 0%);
+
+// space
+@breadcrumb-padding:.3em 1em;
+@breadcrumb-margin:1em 0;
+
+// misc
+@breadcrumb-seperator:" / ";
+
+
+
+// ---------------------------------------------------------
+//     Pagination Settings
+// ---------------------------------------------------------
+
+// color
+@pagination-background-color: transparent;
+@pagination-background-hover-color: @primary-color;
+
+// font
+@pagination-font-color: @primary-color;
+@pagination-font-hover-color: @white;
+
+// border
+@pagination-border-radius: @global-radius;
+@pagination-border-color: @mono-color;
+
+// space
+@pagination-padding: .35rem .8rem;
+
+// ---------------------------------------------------------
+//     Content Collapse
+// ---------------------------------------------------------
+
+// color
+@cc-title-color: @global-font-color;
+@cc-plus-minus-color: @mono-color;
+
+// font
+@cc-title-font-size: .875em;
+
+// border
+@cc-border-color: @mono-color;
+@cc-border-radius: @global-radius;
+
+// space
+@cc-plus-padding: 0 1em;
+@cc-padding: 0.4em;
+
+// ---------------------------------------------------------
+//     Slideshow
+// ---------------------------------------------------------
+
+@ss-next-prev-color:@white;
+
+@ss-border-radius:@global-radius;
+
+// ---------------------------------------------------------
+//     Switches
+// ---------------------------------------------------------
+
+@switch-on-color:@success-color;
+@switch-on-border-color:darken(@success-color, 5%);
+@switch-off-color:darken(@white, 10%);
+
+
+// ---------------------------------------------------------
+//     Tables
+// ---------------------------------------------------------
+
+// color
+@table-border-color:@mono-color;
+@table-striped-color:lighten(@table-border-color, 5%);
+@table-caption-color:@secondary-text;
+
+// font
+@table-heading-font-size:@paragraph-font-size;
+@table-heading-font-weight:bold;
+@table-content-font-size:@paragraph-font-size - .2em;
+
+// border
+@table-border-radius:@global-radius;
+
+// space
+@table-cell-padding:.75em .5em;
+
+
+// ---------------------------------------------------------
+//     Tabs
+// ---------------------------------------------------------
+
+// color
+@tab-default-color:@white;
+@tab-active-color:@primary-color;
+
+// font
+@tab-font-size:@base-font-size;
+@tab-default-font-color:@global-font-color;
+// border
+@tab-border-color:#ccc;
+
+// space
+@tab-padding-large:0px 30px;
+@tab-padding-small:5px 20px;
+@tab-height:40px;
+
+
+
+
+
+
+
+
+

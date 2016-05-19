@@ -1,0 +1,84 @@
+// ==============================================
+//              User Interface
+// ==============================================
+
+ul.verticalTabs {
+    margin: 0;
+    list-style: none;
+    background-color: @mono-color;
+    display: inline-block;
+}
+
+ul.verticalTabs li a {
+    text-decoration: none;
+    color: @global-font-color;
+    display: block;
+    padding: 1em;    
+    border-bottom: 2px solid darken(@mono-color, 10%);
+    
+    .transition();
+
+    &:hover {
+        background-color: lighten(@mono-color, 5%);
+        .transition();
+    }
+}
+
+ul.verticalTabs li:last-child a {
+    border: none;
+}
+
+
+.progressBar {
+  margin-top: 1em;
+}
+
+.progressBar-subtitle {
+  display: block;
+}
+
+.progressBar-title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.progressBar::after {
+  content: " ";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+.progressBar-outer {
+    width: 300px;
+    height: 20px;
+    border: 1px solid darken(@mono-color, 10%);
+    border-radius: 50px;
+    margin-top: .5em;
+    float: left;
+}
+
+.progressBar-inner {
+    float: left;
+    height: 100%;
+    background: @success-color;
+    border-radius: 50px;
+
+    &.red {
+        background: @error-color !important;
+    }
+
+    &.green {
+        background: @success-color !important;
+    }
+
+    &.yellow {
+        background: @warning-color !important;
+    }
+}
+
+span.progressBar-progress {
+  margin-top: .5em;
+  float: left;
+  margin-left: .75em;
+}

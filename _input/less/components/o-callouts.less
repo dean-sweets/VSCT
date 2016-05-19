@@ -1,0 +1,93 @@
+// ==============================================
+//              Callouts
+// ==============================================
+
+.callouts{
+    margin-top: 1em;
+    background-color: @secondary-color;
+    float: left;
+    width: 100%;
+}
+
+.callouts img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.calloutsText {
+    padding: 20px;
+}
+
+.calloutsText a {
+    margin-top: 4px;
+    display: block;
+}
+
+.calloutsText a:hover {
+    color: darken(@white, 20%);
+}
+
+.calloutsText a:after {
+    content: '\f105';
+    font-family: FontAwesome;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: @medium-up) {
+    .callouts img {
+        height: 340px;
+        width: 370px;
+    }
+}
+
+@media only screen and (min-width: @large-up) {
+
+    .callouts img {
+    height: 326px;
+    width: 584px;
+}
+
+.calloutsText {
+    padding: 60px 60px 30px 30px;
+}
+}
+
+.calloutsText p {
+    color: @white;
+}
+
+.calloutsText a {
+    color: @white;
+    text-decoration: none;
+}
+
+.callouts.one{
+
+	.simplecallout{
+
+	}
+}
+
+
+
+.callouts.two{}
+.callouts.three{}
+.callouts.four{}
+.callouts.five{}
+.callouts.six{}
+.callouts.seven{}
+.callouts.eight{}
+.callouts.nine{}
+
+@media only screen and (min-width: @medium-up) {
+    .callouts{
+
+    }
+}
+
+@media only screen and (min-width: @large-up) {
+    .callouts{
+        
+    }
+}

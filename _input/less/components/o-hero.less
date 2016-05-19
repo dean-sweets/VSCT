@@ -1,0 +1,48 @@
+// ==============================================
+//				Hero
+// ==============================================
+.heroText {}
+
+.heroImage {
+    img {
+        width: 100%;
+    }
+}
+
+.hero h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.hero .button {
+    width: 50%;
+    font-size: .81em;
+}
+
+.heroBackground {
+    // padding: 4em 1em;
+    background: url('../img/HeroImage_Home.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: @medium-up) {
+    .heroBackground {
+        padding: 4em 1em;
+    }
+    .hero .button {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: @medium-up) {}
+
+@media only screen and (min-width: @large-up) {
+    .heroText {}
+    img.heroText-Logo {
+        margin-bottom: 2em;
+    }
+}

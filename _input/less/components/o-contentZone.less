@@ -1,0 +1,267 @@
+// ==============================================
+//              Content Zone
+// ==============================================
+
+.contentZone:before{
+    display: inline;
+    height: 0;
+    opacity: .5;
+    text-transform: uppercase;
+    left: @column-gutter / 2;
+    top: -20px;
+    position: relative;
+    font-weight: bold;
+}
+
+
+
+.contentZone.one {
+    
+     &::before{
+        content: "beau";
+    }
+
+
+    .beau h3{
+        line-height: 260%;
+        font-weight: 200;
+    }
+
+}
+
+
+
+
+.contentZone.two {
+
+     &::before{
+        content: "Bernice";
+    }
+
+    .bernice-image img{
+         width: 100%;
+    }
+
+    .bernice-featuredText {
+        margin-bottom: 1em;
+    }
+
+
+
+}
+
+
+
+.contentZone.three {
+
+    &::before{
+        content: "brodie";
+    }
+
+    .brodie-form{
+        background-color: darken(@mono-color,15%);
+        margin-bottom: 2em;
+        padding: 2em;
+    }
+
+    .brodie-form--button{
+        .button();
+    }
+
+    .brodie-signup {
+        margin-top: 0;
+    } 
+
+
+}
+
+
+
+
+
+
+.contentZone.four {
+
+    &::before{
+        content: "Belinda";
+    }
+
+
+
+
+    .featuredText {
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+    .secondaryText {
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        margin: .5em 0;
+        padding: .5em 0;
+    }
+}
+.contentZone.five {
+    .featuredVideo {
+        text-align: center;
+        margin-bottom: 3em;
+        h5 {
+            margin-bottom: 2em;
+        }
+    }
+    .featuredCallouts {
+        text-align: center;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1em;
+    }
+}
+.contentZone.six {
+    .featuredImage {
+        img {
+            width: 100%;
+        }
+    }
+    .featuredActions {
+    }
+}
+.contentZone.seven {
+    .featuredText {
+        margin-bottom: 3em;
+        text-align: center;
+    }
+    .secondaryText {
+        text-align: center;
+        i {
+            margin-bottom: 2em;
+        }
+    }
+}
+.contentZone.eight {
+    .featuredText {
+        margin-bottom: 2em;
+    }
+    .subText {
+        margin-bottom: 2em;
+        float: left;
+    }
+    .featuredImage {
+        img {
+            width: 100%;
+        }
+    }
+    .descriptiveText {
+    }
+}
+.contentZone.nine {
+    .productDescription {
+    }
+    .productImage {
+        img {
+            width: 100%;
+        }
+    }
+}
+.contentZone.ten {
+	.introPanel{
+		text-align: center;
+		i{
+			margin-bottom: 1.5em;
+		}
+	}
+	.circle{
+		background-color: darken(@mono-color, 10%);
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 12px 15px 0px 15px;
+		font-size: 30px;
+		color:darken(@mono-color, 30%);
+		display: block;
+		margin-top: 2em;
+
+		&:hover{
+			background-color: darken(@mono-color, 5%);
+		}
+}
+	}
+
+.contentZone.eleven {
+	.featureList{
+		i{
+			float: left;
+			padding:0 1em 0 0;
+		}
+		.featureList-feature{
+			border-bottom:1px solid darken(@mono-color, 10%);
+			padding:1em 0;
+			margin:1em 0;
+		}
+	}
+	.featuredImage{
+		text-align: center;
+	}
+}
+.contentZone.twelve {
+	.titleText{
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.featureCallout{
+		margin-top: 3em;
+	}
+
+
+}
+.contentZone.thirteen {
+}
+.contentZone.fourteen {
+}
+.contentZone.fifteen {
+}
+.contentZone.sixteen {
+}
+@media only screen and (min-width:@medium-up) {
+    .contentZone {
+    }
+    .contentZone.four {
+        .featuredText {
+            margin-bottom: 2em;
+            padding-bottom: 2em;
+        }
+        .secondaryText {
+            text-align: left;
+            border-bottom: 0;
+        }
+    }
+    .contentZone.five {
+        .featuredCallouts {
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+	    .contentZone.eleven{
+    	.featuredImage{
+    		margin-top:5em;
+    	}
+    }
+
+
+}
+@media only screen and (min-width:@large-up) {
+    .contentZone.three {
+        .signupWidget {
+            margin-bottom: 0;
+        }
+        .signupInfo {
+            margin-top: 3em;
+        }
+    }
+
+
+}
