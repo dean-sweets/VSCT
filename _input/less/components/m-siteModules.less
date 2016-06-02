@@ -1,6 +1,11 @@
+// HeaderInputs
+.headerInput {
+    width: 100%;
+    .clearfix();
+}
+
 input.searchBar-input {
     border: 1px solid #ccc;
-    border-radius: 3px 0 0 3px;
     margin-bottom: 0;
     padding: 0;
     padding-left: 1em;
@@ -15,7 +20,6 @@ input.searchBar-button {
     border: 0;
     border: 1px solid #ccc;
     border-left: none;
-    border-radius: 0 3px 3px 0;
     background-color: @primary-color;
     position: relative;
     right: 4px;
@@ -58,7 +62,7 @@ input.searchBar-button.results {
     input.searchBar-button {
         height: 2.22em;
         background-color: @primary-color;
-         width: 40px;
+        width: 40px;
         &:hover {
             background: lighten(@primary-color, 10%);
             border-color: #ccc;
@@ -75,14 +79,14 @@ input.searchBar-button.results {
 }
 
 @media only screen and (min-width: @medium-up) {
-    .headerSearch {
+    .headerInput-Search {
         float: right;
         margin-top: 8px;
     }
 }
 
 @media only screen and (min-width: @large-up) {
-    .headerSearch {
+    .headerInput-Search {
         margin-top: 5px;
     }
     input.searchBar-input.results {
@@ -111,10 +115,15 @@ input.searchBar-button.results {
         padding-bottom: 0;
     }
 }
+@media only screen and (min-width: @large-up) {
+    .headerLogo {
+        padding: 1em 0;
+    }
+}
 
 .internalLinks {
     background-color: @primary-color;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid @white;
     border-right: 1px solid @white;
     display: block;
@@ -124,7 +133,6 @@ input.searchBar-button.results {
     text-transform: uppercase;
     font-size: .875em;
     width: 100%;
-    height: 55px;
     &:hover {
         color: darken(@white, 30%);
         .transition();
@@ -134,39 +142,42 @@ input.searchBar-button.results {
 a.internalLinks:after {
     content: '\f105';
     font-family: FontAwesome;
-    
+    padding-left: 0.5em;
 }
 
 @media only screen and (min-width: @medium-up) {
     .internalLinks {
-        padding: 15px;
+        padding: 10px 10px;
         text-align: left;
-        font-size: 1em;
-        word-spacing: 5px;
-        height: 75px;
+        font-size: .75em;
+        letter-spacing: 0.5px;
+        height: 50px;
     }
-   
 }
 
 @media only screen and (min-width: @large-up) {
-    
     .internalLinks {
-        font-size: 1.15em;
-        word-spacing: normal;
-        height: 62px;
+        font-size: 0.9em;
+        padding-left: 1.85em;
+        padding-top:1.125em;
+        height: 52px;
     }
 }
 
 .newsHeading {
-    background: @primary-color;
+    background: @secondary-color;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
     width: 100%;
+    h6{
+        text-transform:none;
+        font-size:0.875em;
+    }
 }
 
 .newsHeading h6 {
-    color: @white;
+    color: @black;
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -175,10 +186,10 @@ a.internalLinks:after {
 
 .newsSummary {
     margin-top: 10px;
+    padding: 0 1em;
 }
 
 .newsFeed {
-    padding: 20px;
     width: 100%;
     border-bottom: 1px solid #ccc;
 }
@@ -190,6 +201,12 @@ a.internalLinks:after {
     display: block;
 }
 
+.newsButton .button {
+    background-color: @tertiary-color;
+    border-color: @tertiary-color;
+    margin-bottom: 0;
+}
+
 @media only screen and (min-width: @medium-up) {
     .newsFeed {
         border-bottom: none;
@@ -197,7 +214,7 @@ a.internalLinks:after {
 }
 
 .newsFeed:hover {
-    background-color: #e8e8e8;
+    background-color: @mono-color;
 }
 
 @media only screen and (min-width: @medium-up) {
@@ -242,8 +259,8 @@ div.show-image a {
 }
 
 div.show-image a.button {
-    top: 110px;
-    left: 110px;
+    top: 30%;
+    left: 30%;
     background: @primary-color;
     border-color: @primary-color;
     &:hover {
@@ -269,27 +286,27 @@ div.show-image span {
 
 @media only screen and (min-width: @medium-up) {
     div.show-image a.button {
-        top: 120px;
-        left: 120px;
+        top: 30%;
+        left: 30%;
     }
 }
 
 @media only screen and (min-width: @large-up) {
     div.show-image a.button {
-        top: 80px;
-        left: 65px;
+        top: 30%;
+        left: 30%;
     }
 }
 
 .pageHeading {
-    border-bottom: 2px solid @secondary-color;
+    border-bottom: 2px solid @primary-color;
 }
 
 .pageHeading h1 {
     margin-bottom: 5px;
     font-size: 3.3125em;
-    font-weight: 400;
-    padding-left: .2em;
+    font-weight: 300;
+    color: @secondary-head;
 }
 
 .pageHeading-Text {
@@ -326,7 +343,7 @@ div.show-image span {
 }
 
 .pageHeading-Text p {
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .pageHeading-Img {
@@ -358,6 +375,11 @@ div.show-image span {
 
 .pageTopText p {
     font-weight: 400;
+}
+.pageTopText ul,
+.pageBottomText ul {
+    margin-left: 2em;
+    margin-top: 0.5em;
 }
 
 .pageImage {
@@ -407,18 +429,16 @@ div.show-image span {
     vertical-align: bottom;
 }
 
-@media only screen and (min-width: @large-up) {
-    
-}
+@media only screen and (min-width: @large-up) {}
 
 .rightInternalNav {
     margin-top: 40px;
     margin-bottom: 55px;
-    background: #e8e8e8;
+    background: @mono-color;
 }
 
 .rightInternalNav.internal {
-    margin-top: 0;
+    margin-top: 0.75em;
 }
 
 @media only screen and (min-width: @medium-up) {
@@ -435,22 +455,30 @@ div.show-image span {
 }
 
 .internalNavHeading {
-    background: #2f2c2e;
-    padding: 15px;
-}
-
-.internalNavHeading h5 {
-    color: @white;
-    margin-bottom: 0;
+    background: #232323;
+    padding: 0.75em 16px;
+    h5 {
+        color: @white;
+        margin-bottom: 0;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 1em;
+    }
 }
 
 .internalNavLinks ul {
     list-style-type: none;
+    margin: 0;
 }
 
 .internalNavLinks li {
     border-bottom: 1px dotted #ccc;
-    padding: 10px 0;
+    padding: 10px 1em;
+}
+
+.internalNavLinks li ul {
+    display: none;
 }
 
 .internalNavLinks li:last-child {
@@ -459,49 +487,59 @@ div.show-image span {
 
 .internalNavLinks ul li a {
     text-decoration: none;
-    color: #525252;
+    color: @global-font-color;
     font-weight: 500;
     &:hover {
-        color: lighten(#525252, 10%);
+        color: @primary-light;
     }
 }
 
 .navCallouts-heading h3 {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 1.5em;
 }
 
 .navCallouts {
-    background: #2f2c2e;
+    background: @black;
     width: 100%;
     float: left;
     margin-bottom: 10px;
+    .transition();
+    &:hover {
+        background-color: lighten(@black, 10%);
+    }
 }
 
 .navCallouts-Info {
-    padding: 10px;
+    padding: 16px;
     color: @white;
     float: left;
 }
 
 .navCallouts-Info h5 {
     font-weight: 600;
+    font-size: 1em;
     margin-bottom: 0;
-}
-
-.navCallouts-Info h5:after {
-    content: '\f105';
-    font-family: FontAwesome;
-    padding-left: 5px;
-    font-weight: 700;
+    &:after {
+        content: '\f105';
+        font-family: "FontAwesome";
+        padding-left: 5px;
+    }
 }
 
 .navCallouts-Info ul {
     list-style-type: none;
     margin-left: 0;
     margin-bottom: 0;
+    li{
+        font-size:0.9em;
+    }
 }
-
+.navCallouts ul li:nth-child(2),
+.navCallouts ul li:first-child {
+    font-style:italic;
+}
 .navCallouts ul.contactInfo li:last-child {
     text-decoration: underline;
 }
@@ -511,18 +549,6 @@ div.show-image span {
     width: 113px;
     vertical-align: bottom;
     float: right;
-}
-
-@media only screen and (min-width: @medium-up) {
-    .navCallouts-Info {
-        padding: 10px;
-    }
-}
-
-@media only screen and (min-width: @large-up) {
-    .navCallouts-Info {
-        padding: 10px;
-    }
 }
 
 .overlay {
@@ -619,26 +645,34 @@ div.show-image span {
     margin-top: 10px;
 }
 
-.linkedinButton {
-        margin-top: 4px;
-        background: #0077b5;
-        padding: 10px;
-        display: inline-block;
-        &:hover{
-            background: darken(#0077b5, 10%);
-        }
+.linkedinButton,
+.twitterButton,
+.facebookButton,
+.youtubeButton {
+    margin-top: 0px;
+    float: right;
+    margin-left: 10px;
+    background: @secondary-color;
+    padding: 10px;
+    display: inline-block;
+    &:hover {
+        background: darken(@secondary-color, 10%);
     }
+}
 
-    .linkedinButton i {
-        color: @black;
-        font-size: 1.25em;
-        position: relative;
-        left: 2px;
-    }
+.linkedinButton i,
+.twitterButton i,
+.facebookButton i,
+.youtubeButton i {
+    color: @black;
+    font-size: 1.25em;
+    position: relative;
+    left: 2px;
+}
 
-    .linkedinButton.job i {
-        color: @white;
-    }
+.linkedinButton.job i {
+    color: @white;
+}
 
 .contactName h2 {
     margin-bottom: 0;

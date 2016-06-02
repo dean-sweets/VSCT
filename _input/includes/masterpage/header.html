@@ -9,7 +9,7 @@
     <!-- Compiled SMACSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,300,600,700,900' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 
@@ -60,12 +60,18 @@
             </div>
         </div>
         <div class="large-3  medium-6 columns show-for-medium">
-            <div class="headerSearch">
+            <div class="headerInput-Search">
                 <input type="text" class="searchBar-input" placeholder="Search smithers.com">
                 <input type="submit" class="searchBar-button" value="&#xf002;">
             </div>
         </div>
-        <div class="large-6 columns">
+        <div class="large-9 columns">
+            <div class="headerInput show-for-large">
+                <div class="headerInput-Search">
+                    <input type="text" class="searchBar-input" placeholder="Search smithers.com">
+                    <input type="submit" class="searchBar-button" value="&#xf002;">
+                </div>
+            </div>
             include "navigation/navToggle.html"
         </div>
         <div class="multiLevelNavMobile show-for-small">
@@ -78,11 +84,5 @@
                 <a href="searchresults.html" class="button search"><i class="fa fa-search">&nbsp;</i></a>
             </div>
             include "navigation/multiLevelMobile.html"
-        </div>
-        <div class="large-3 columns show-for-large">
-            <div class="headerSearch">
-                <input type="text" class="searchBar-input" placeholder="Search smithers.com">
-                <input type="submit" class="searchBar-button" value="&#xf002;">
-            </div>
         </div>
     </div>

@@ -26,9 +26,9 @@
 @body-bg: @white; // you can set this to a variable, color, or image
 
 // fonts
-@global-font-family: 'Source Sans Pro', sans-serif;
-@global-font-color: #525252;
-@global-link-color: @secondary-color;
+@global-font-family: 'Open Sans', sans-serif;
+@global-font-color: @black;
+@global-link-color: #3a97d8;
 
 @global-line-height: 1.4;
 @base-font-size: 1em; // p's, labels,
@@ -37,7 +37,7 @@
 @global-font-weight: normal;
 @global-font-style: normal;
 
-@global-radius: 3px; // the roundness of all things (buttons, inputs, panels, boxes)
+@global-radius: 0px; // the roundness of all things (buttons, inputs, panels, boxes)
 
 @global-transition: all ease .2s; // for use with the .transition(); mixin
 @global-blur: 5px; // for use with the .blur(); mixin
@@ -48,17 +48,18 @@
 // ----------------------------------------
 
 // Theme Colors
-@primary-color: #3a97d8;
+@primary-color: #0e4c23;
 @primary-dark: darken(@primary-color, 10%);
 @primary-light: lighten(@primary-color, 10%);
-@secondary-color: #003366;
-@tertiary-color: #F44336;
+@secondary-color: #ffcc33;
+@tertiary-color: #8F9290;
 
 // mono
-@mono-color: #eee; // light gray primarily used for borders
+@mono-color: lighten(#7d7b7c, 48%); // light gray primarily used for borders
 @white: #FEFEFE;
-@black: #333333;
-@secondary-text: #727272;
+@black: #565857;
+@secondary-head:#5B5B5B;
+@secondary-text: @tertiary-color;
 
 // alert colors
 @warning-color: #E97D3D;
@@ -73,7 +74,7 @@
 // ----------------------------------------
 
 // Columns
-@row-width: 75em;
+@row-width: 85em;
 @total-columns: 12;
 @column-gutter: 2em;
 
@@ -177,7 +178,7 @@
 
 // font
 @nav-font-family:@global-font-family;
-@nav-font-size:@base-font-size;
+@nav-font-size:0.9em;
 @nav-font-weight:normal;
 
 // border
@@ -235,25 +236,25 @@
 // ---------------------------------------------------------
 
 // color
-@breadcrumb-background-color:lighten(#ccc, 17%);
-@breadcrumb-link-color:@secondary-color;
-@breadcrumb-link-hover-color:@primary-light;
-@breadcrumb-span-color:@global-font-color;
+@breadcrumb-background-color:@mono-color;
+@breadcrumb-link-color:@primary-light;
+@breadcrumb-link-hover-color:@primary-color;
+@breadcrumb-span-color:@black;
 
 // font
-@breadcrumb-font-size:@base-font-size;
-@breadcrumb-font-weight:300;
+@breadcrumb-font-size:12px;
+@breadcrumb-font-weight:600;
 
 // border
 @breadcrumb-border-radius:@global-radius;
 @breadcrumb-border-color:darken(@mono-color, 0%);
 
 // space
-@breadcrumb-padding:.3em 1em;
-@breadcrumb-margin:1em 0;
+@breadcrumb-padding:7px 6px 8px 14px;
+@breadcrumb-margin:0 0 1em -12px;
 
 // misc
-@breadcrumb-seperator:" / ";
+@breadcrumb-seperator:"\f105";
 
 
 
