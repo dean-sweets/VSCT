@@ -205,6 +205,11 @@ a.internalLinks:after {
     background-color: @tertiary-color;
     border-color: @tertiary-color;
     margin-bottom: 0;
+    .transition();
+}
+.newsButton .button:hover{
+    background-color: #ccc;
+    border-color: #ccc;
 }
 
 @media only screen and (min-width: @medium-up) {
@@ -404,6 +409,28 @@ div.show-image span {
     background-color: #e8e8e8;
     padding: 20px;
     margin-bottom: 1em;
+}
+
+a.relatedArticle{
+    text-decoration: none;
+    display:block;
+    padding-bottom:8px;
+    &:after{
+        content:"\f105";
+        font-family:"FontAwesome";
+        padding-left:10px;
+    }
+}
+
+.box {
+    background-color: @primary-color !important;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 18px !important;
+    min-height: 30px;
+}
+.box:hover{
+    background-color: @primary-dark !important;
 }
 
 .featuredItem-title h3,

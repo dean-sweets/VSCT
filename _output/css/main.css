@@ -4189,30 +4189,40 @@ a.internalLinks:after {
   background-color: #8f9290;
   border-color: #8f9290;
   margin-bottom: 0;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 210, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+.newsButton .button:hover {
+  background-color: #ccc;
+  border-color: #ccc;
 }
 @media only screen and (min-width: 48em) {
-  /* line 211, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 216, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .newsFeed {
     border-bottom: none;
   }
 }
-/* line 216, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 221, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .newsFeed:hover {
   background-color: #f6f6f6;
 }
 @media only screen and (min-width: 48em) {
-  /* line 221, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 226, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .newsButton .button {
     width: 100%;
   }
 }
 @media only screen and (min-width: 64.025em) {
-  /* line 227, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 232, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .newsButton .button {
     width: 100%;
   }
 }
-/* line 232, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 237, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .viewAllLink {
   float: right;
   text-transform: lowercase;
@@ -4221,34 +4231,34 @@ a.internalLinks:after {
   font-size: 1.25em;
   font-weight: 400;
 }
-/* line 241, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 246, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image {
   position: relative;
   margin: 5px;
   background: #2f2c2e;
 }
-/* line 247, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 252, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image:hover img {
   opacity: .5;
 }
-/* line 251, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 256, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image:hover a {
   display: block;
   text-align: center;
 }
-/* line 256, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 261, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image a {
   position: absolute;
   display: none;
 }
-/* line 261, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 266, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image a.button {
   top: 30%;
   left: 30%;
   background: #0e4c23;
   border-color: #0e4c23;
 }
-/* line 266, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 271, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image a.button:hover {
   background: #06210f;
   -webkit-transition: all ease 0.2s;
@@ -4257,71 +4267,71 @@ div.show-image a.button:hover {
   transition: all ease 0.2s;
   -webkit-transform: translate3d(0, 0, 0);
 }
-/* line 272, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 277, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .show-image img {
   width: 100%;
 }
-/* line 276, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 281, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image {
   color: #fefefe;
   text-align: center;
 }
-/* line 281, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 286, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 div.show-image span {
   padding: 10px 0;
   display: block;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 48em) {
-  /* line 288, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 293, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   div.show-image a.button {
     top: 30%;
     left: 30%;
   }
 }
 @media only screen and (min-width: 64.025em) {
-  /* line 295, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 300, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   div.show-image a.button {
     top: 30%;
     left: 30%;
   }
 }
-/* line 301, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 306, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading {
   border-bottom: 2px solid #0e4c23;
 }
-/* line 305, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 310, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading h1 {
   margin-bottom: 5px;
   font-size: 3.3125em;
   font-weight: 300;
   color: #5b5b5b;
 }
-/* line 312, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 317, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading-Text {
   margin-top: 40px;
 }
-/* line 316, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 321, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading-Text.bio {
   margin-top: 10px;
 }
-/* line 320, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 325, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading-Text img {
   width: 100%;
 }
-/* line 324, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 329, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageSubHeading ul {
   list-style-type: none;
   margin-left: 0;
   margin-top: 5px;
 }
-/* line 330, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 335, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageSubHeading ul li {
   display: inline-block;
   padding-right: 10px;
 }
 @media only screen and (min-width: 48em) {
-  /* line 336, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 341, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .pageHeading-Text img {
     width: 267px;
     height: 319px;
@@ -4330,123 +4340,147 @@ div.show-image span {
     margin-right: 10px;
   }
 }
-/* line 345, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 350, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading-Text p {
   font-weight: 100;
 }
-/* line 349, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 354, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading-Img {
   margin-top: 20px;
 }
-/* line 353, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 358, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading-Img img {
   width: 100%;
 }
-/* line 357, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 362, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading h2 {
   font-size: 3.3125em;
   font-weight: 400;
   font-size: 2.75em;
 }
-/* line 363, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 368, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading.noBorder {
   border-bottom: none;
 }
-/* line 367, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 372, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageHeading.noBorder h2 {
   position: relative;
   padding-left: .5em;
 }
-/* line 372, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 377, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageTopText {
   margin-top: 40px;
 }
-/* line 376, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 381, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageTopText p {
   font-weight: 400;
 }
-/* line 379, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 384, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageTopText ul,
 .pageBottomText ul {
   margin-left: 2em;
   margin-top: 0.5em;
 }
-/* line 385, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 390, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageImage {
   margin: 2em 0;
 }
-/* line 389, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 394, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageBottomText {
   margin-bottom: 40px;
 }
-/* line 393, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 398, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageBottomText p {
   font-weight: 400;
 }
 @media only screen and (min-width: 64.025em) {
-  /* line 398, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 403, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .pageHeading-Img {
     margin-left: 20px;
   }
 }
-/* line 403, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 408, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .featuredItem {
   background-color: #e8e8e8;
   padding: 20px;
   margin-bottom: 1em;
 }
-/* line 409, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 414, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+a.relatedArticle {
+  text-decoration: none;
+  display: block;
+  padding-bottom: 8px;
+}
+/* line 418, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+a.relatedArticle:after {
+  content: "\f105";
+  font-family: "FontAwesome";
+  padding-left: 10px;
+}
+/* line 425, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+.box {
+  background-color: #0e4c23 !important;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 18px !important;
+  min-height: 30px;
+}
+/* line 432, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+.box:hover {
+  background-color: #06210f !important;
+}
+/* line 436, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .featuredItem-title h3,
 .featuredItem-Date h5,
 .featuredItem-Text p {
   font-weight: 600;
 }
-/* line 415, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 442, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .shareLinks {
   border-top: 1px dotted #ccc;
   border-bottom: 1px dotted #ccc;
   padding: 5px 0;
 }
-/* line 421, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 448, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .shareLinks span {
   font-weight: 500;
   margin-right: 20px;
   position: relative;
   top: -10px;
 }
-/* line 428, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 455, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .shareLinks img {
   vertical-align: bottom;
 }
-/* line 434, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 461, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .rightInternalNav {
   margin-top: 40px;
   margin-bottom: 55px;
   background: #f6f6f6;
 }
-/* line 440, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 467, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .rightInternalNav.internal {
   margin-top: 0.75em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 445, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 472, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .rightInternalNav {
     margin-top: 80px;
     margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 64.025em) {
-  /* line 452, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 479, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .rightInternalNav {
     margin-bottom: 40px;
   }
 }
-/* line 457, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 484, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavHeading {
   background: #232323;
   padding: 0.75em 16px;
 }
-/* line 460, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 487, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavHeading h5 {
   color: #fefefe;
   margin-bottom: 0;
@@ -4455,41 +4489,41 @@ div.show-image span {
   letter-spacing: 0.5px;
   font-size: 1em;
 }
-/* line 470, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 497, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavLinks ul {
   list-style-type: none;
   margin: 0;
 }
-/* line 475, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 502, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavLinks li {
   border-bottom: 1px dotted #ccc;
   padding: 10px 1em;
 }
-/* line 480, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 507, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavLinks li ul {
   display: none;
 }
-/* line 484, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 511, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavLinks li:last-child {
   border-bottom: none;
 }
-/* line 488, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 515, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavLinks ul li a {
   text-decoration: none;
   color: #565857;
   font-weight: 500;
 }
-/* line 492, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 519, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .internalNavLinks ul li a:hover {
   color: #167737;
 }
-/* line 497, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 524, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-heading h3 {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 1.5em;
 }
-/* line 503, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 530, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts {
   background: #565857;
   width: 100%;
@@ -4501,55 +4535,55 @@ div.show-image span {
   transition: all ease 0.2s;
   -webkit-transform: translate3d(0, 0, 0);
 }
-/* line 509, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 536, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts:hover {
   background-color: #6f7271;
 }
-/* line 514, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 541, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-Info {
   padding: 16px;
   color: #fefefe;
   float: left;
 }
-/* line 520, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 547, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-Info h5 {
   font-weight: 600;
   font-size: 1em;
   margin-bottom: 0;
 }
-/* line 524, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 551, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-Info h5:after {
   content: '\f105';
   font-family: "FontAwesome";
   padding-left: 5px;
 }
-/* line 531, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 558, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-Info ul {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
 }
-/* line 535, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 562, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-Info ul li {
   font-size: 0.9em;
 }
-/* line 539, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 566, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts ul li:nth-child(2),
 .navCallouts ul li:first-child {
   font-style: italic;
 }
-/* line 543, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 570, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts ul.contactInfo li:last-child {
   text-decoration: underline;
 }
-/* line 547, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 574, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .navCallouts-Img img {
   height: 195px;
   width: 113px;
   vertical-align: bottom;
   float: right;
 }
-/* line 554, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 581, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .overlay {
   width: 100%;
   height: auto;
@@ -4558,92 +4592,92 @@ div.show-image span {
   padding: 2em 1em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 563, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+  /* line 590, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
   .overlay {
     background-color: transparent;
     padding: 0;
   }
 }
-/* line 569, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 596, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleTitle {
   font-size: 1.5em;
   color: #0e4c23;
   font-weight: 400;
 }
-/* line 575, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 602, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleTitle h5 {
   font-weight: 600;
   color: #39a0fc;
 }
-/* line 580, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 607, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleTitle a {
   text-decoration: none;
   color: #0e4c23;
 }
-/* line 583, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 610, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleTitle a:hover {
   color: #167737;
 }
-/* line 588, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 615, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleSubTitle {
   font-size: 1em;
   font-weight: 400;
   margin-top: 10px;
 }
-/* line 594, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 621, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .article {
   border-bottom: 1px dotted #ccc;
   padding: 30px 0;
 }
-/* line 599, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 626, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleDate h3 {
   font-weight: 600;
   font-style: italic;
 }
-/* line 604, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 631, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .columns .article:last-child {
   border-bottom: none;
 }
-/* line 608, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 635, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .columns .article:first-child {
   margin-top: 20px;
 }
-/* line 612, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 639, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .articleSearch {
   margin-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 618, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 645, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageLink {
   margin-top: 20px;
 }
-/* line 622, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 649, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageLink a {
   text-decoration: none;
   color: #525252;
   font-weight: 400;
 }
-/* line 626, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 653, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .pageLink a:hover {
   color: #6c6c6c;
 }
-/* line 633, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 660, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .contactName span {
   display: block;
   font-weight: 600;
   color: #39a0fc;
   margin-bottom: 10px;
 }
-/* line 640, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 667, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .contactName span:first-child {
   margin-top: 50px;
 }
-/* line 644, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 671, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .contactName.bio span:first-child {
   margin-top: 10px;
 }
-/* line 648, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 675, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .linkedinButton,
 .twitterButton,
 .facebookButton,
@@ -4655,14 +4689,14 @@ div.show-image span {
   padding: 10px;
   display: inline-block;
 }
-/* line 658, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 685, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .linkedinButton:hover,
 .twitterButton:hover,
 .facebookButton:hover,
 .youtubeButton:hover {
   background: #ffbf00;
 }
-/* line 663, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 690, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .linkedinButton i,
 .twitterButton i,
 .facebookButton i,
@@ -4672,11 +4706,11 @@ div.show-image span {
   position: relative;
   left: 2px;
 }
-/* line 673, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 700, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .linkedinButton.job i {
   color: #fefefe;
 }
-/* line 677, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
+/* line 704, /Users/DeanSweetnich/Documents/Codesummit Archive/Smithers/VIST/_input/less/components/m-siteModules.less */
 .contactName h2 {
   margin-bottom: 0;
   margin-top: 20px;
